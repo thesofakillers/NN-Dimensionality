@@ -30,9 +30,9 @@ def conv_output_dims(input_dims, hyperparameters):
     # parse hyperparameters
     k, f, s, p = hyperparameters
     # calculate output width
-    w_out = int((w_in - f - 2 * p) / s + 1)
+    w_out = int((w_in - f + 2 * p) / s + 1)
     # calculate output height
-    h_out = int((h_in - f - 2 * p) / s + 1)
+    h_out = int((h_in - f + 2 * p) / s + 1)
     # calculate output depth
     d_out = int(k)
     # return list of output dimensions
